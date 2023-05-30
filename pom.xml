@@ -78,8 +78,13 @@
         </repository>
         <repository>
             <id>CodeMC</id>
-            <url>https://repo.codemc.org/repository/maven-public</url>
+            <url>https://repo.codemc.io/repository/maven-public</url>
         </repository>
+        <repository>
+            <id>CMI-API</id>
+            <url>https://github.com/Zrips/</url>
+        </repository>
+        
         <repository>
             <id>placeholderapi</id>
             <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
@@ -90,7 +95,7 @@
         <dependency>
             <groupId>org.purpurmc.purpur</groupId>
             <artifactId>purpur-api</artifactId>
-            <version>1.19.4-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -111,11 +116,14 @@
             <version>2.11.3</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
-            <groupId>net.zrips</groupId>
+            <groupId>com.zrip.cmi</groupId>
             <artifactId>CMI-API</artifactId>
             <version>9.5.0.8</version>
-            <scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/CMI-API9.5.0.8.jar</systemPath>
         </dependency>
+        
     </dependencies>
 </project>
