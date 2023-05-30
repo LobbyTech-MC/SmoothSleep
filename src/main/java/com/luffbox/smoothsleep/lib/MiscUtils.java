@@ -1,13 +1,8 @@
 package com.luffbox.smoothsleep.lib;
 
-import com.luffbox.smoothsleep.SmoothSleep;
-import org.apache.commons.lang.text.StrSubstitutor;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.World;
-import org.bukkit.attribute.Attribute;
-import org.bukkit.attribute.AttributeInstance;
-import org.bukkit.entity.Player;
+import static org.bukkit.ChatColor.COLOR_CHAR;
+import static org.bukkit.ChatColor.stripColor;
+import static org.bukkit.ChatColor.translateAlternateColorCodes;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -16,7 +11,15 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static org.bukkit.ChatColor.*;
+import org.apache.commons.lang3.text.StrSubstitutor;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.World;
+import org.bukkit.attribute.Attribute;
+import org.bukkit.attribute.AttributeInstance;
+import org.bukkit.entity.Player;
+
+import com.luffbox.smoothsleep.SmoothSleep;
 
 public class MiscUtils {
 
